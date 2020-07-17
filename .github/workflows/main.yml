@@ -1,0 +1,23 @@
+name: run-ros
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  run-ros:
+    runs-on: ubuntu-18.04
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Install ROS
+      run: bash setup-ros.sh
+
+    - name: Configure the workspace and lunch the application
+      run: |
+        catkin_make
+        source devel/setup.bash
+        timeout 5s roslaunch beginner_tutorials main.launch 
