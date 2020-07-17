@@ -1,0 +1,5 @@
+<launch>
+  <node name="listener" pkg="beginner_tutorials" type="listener.py" output="screen" />
+  <node name="talker" pkg="beginner_tutorials" type="talker.py" />
+  <node name="recorder" pkg="rosbag" type="record" args="record --all --output-name=main.bag" />
+</launch>
