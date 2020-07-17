@@ -1,2 +1,3 @@
-# ros-action
-Run ROS code with GitHub Actions
+# ROS Actions
+
+Run ROS code with GitHub Actions triggered by each commit.
