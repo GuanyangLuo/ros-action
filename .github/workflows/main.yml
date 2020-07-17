@@ -18,6 +18,10 @@ jobs:
 
     - name: Configure the workspace and lunch the application
       run: |
+        source /opt/ros/melodic/setup.bash
         catkin_make
         source devel/setup.bash
-        timeout 5s roslaunch beginner_tutorials main.launch 
+        timeout 5s roslaunch beginner_tutorials main.launch
+        pwd
+        ls -ahl
+        ls -ahl .ros
