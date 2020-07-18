@@ -1,4 +1,4 @@
-name: run-ros
+name: Runs on GitHub Action 
 
 on:
   push:
@@ -21,7 +21,7 @@ jobs:
         source /opt/ros/melodic/setup.bash
         catkin_make
         source devel/setup.bash
-        timeout 5s roslaunch beginner_tutorials main.launch
+        timeout 10s roslaunch beginner_tutorials main.launch || exit 0
         pwd
         ls -ahl
         ls -ahl .ros
