@@ -23,9 +23,8 @@ Run ROS code with GitHub Actions triggered by each commit.
   1. Localization
   1. SLAM
   1. Planing
-  1. Sensors (Visual Odometry)
+  1. Sensor fusion (camera, odometry, accelerometer)
   
 - Questions:
   - Is GitHub actions with Docker faster than installing from scratch?
   - Limit execution on GitHub actions to 10 minutes?
-  
