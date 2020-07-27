@@ -14,8 +14,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       
-      - name: Docker Run
-        uses: ./
+      - name: Simulation
+        uses: race-on/simulate@v0.1
         
       
 
