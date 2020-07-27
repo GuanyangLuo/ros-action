@@ -4,4 +4,4 @@ FROM ros:melodic-ros-base-bionic
 COPY . /race-on/
 
 # Code file to execute when the docker container starts up (`entrypoint.sh`)
-ENTRYPOINT ["/race-on/run.sh"]
+ENTRYPOINT ["bash", "/race-on/run.sh"]
