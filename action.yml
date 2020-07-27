@@ -1,0 +1,8 @@
+name: 'Race'
+description: 'Run ROS code on Race On container'
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - test
