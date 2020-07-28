@@ -17,6 +17,9 @@ jobs:
       - name: Simulation
         uses: race-on/simulate@v0.1.2
       
+      - name: Debug
+        run: pwd
+      
       - uses: actions/upload-artifact@v2
         with:
           name: recorded-messages
