@@ -16,15 +16,8 @@ jobs:
       
       - name: Simulation
         uses: race-on/simulate@v0.1.2
-        
       
-
-#    - name: Install ROS
-#      run: bash setup-ros.sh
-
-#    - name: Configure the workspace and lunch the application
-#      run: |
-#        source /opt/ros/melodic/setup.bash
-#        catkin_make
-#        source devel/setup.bash
-#        timeout 10s roslaunch beginner_tutorials main.launch || exit 0
+      - uses: actions/upload-artifact@v2
+        with:
+          name: recorded-messages
+          path: /github/home/.ros/*.bag
