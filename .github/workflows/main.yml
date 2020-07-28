@@ -14,11 +14,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       
-      - name: Simulation
-        uses: race-on/simulate@v0.1.2
+#       - name: Simulation
+#         uses: race-on/simulate@v0.1.2
       
       - name: Debug
-        run: ls -ahl $HOME
+        run: printenv
       
       - uses: actions/upload-artifact@v2
         with:
