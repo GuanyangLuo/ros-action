@@ -18,7 +18,7 @@ jobs:
         uses: race-on/simulate@v0.1.2
       
       - name: Debug
-        run: pwd
+        run: ls -ahl $HOME
       
       - uses: actions/upload-artifact@v2
         with:
