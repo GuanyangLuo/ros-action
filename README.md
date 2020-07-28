@@ -8,7 +8,7 @@ Run ROS code with GitHub Actions triggered by each commit.
   - ROS Melodic
   - Python 2.7
   - Ubuntu 18.04
-  - Multipass (headless experience similar to GitHub Actions and Raspberry Pi)
+  - Docker container to have the same environment on GitHub Actions and for dev
   
 - Items:
   - Setup script to install all the dependencies on Ubuntu
@@ -26,5 +26,5 @@ Run ROS code with GitHub Actions triggered by each commit.
   1. Sensor fusion (camera, odometry, accelerometer)
   
 - Questions:
-  - Is GitHub actions with Docker faster than installing from scratch?
+  - Is GitHub actions with Docker faster than installing from scratch? Yes
   - Limit execution on GitHub actions to 10 minutes?
