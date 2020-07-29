@@ -5,4 +5,4 @@ catkin_make
 
 source devel/setup.bash
 
-timeout 10s roslaunch beginner_tutorials main.launch || exit 0
+timeout 20s roslaunch raceon_simulation raceon_simulation.launch || exit 0
