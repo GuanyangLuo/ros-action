@@ -1,4 +1,4 @@
-![Runs on GitHub Action](https://github.com/race-on/ros-action/workflows/Runs%20on%20GitHub%20Action/badge.svg)
+[![Runs on GitHub Action](https://github.com/race-on/ros-action/workflows/Runs%20on%20GitHub%20Action/badge.svg)](https://github.com/race-on/ros-action/actions)
 
 # ROS Actions
 Run ROS code with GitHub Actions triggered by each commit. The code runs inside a Ubuntu 18.04 Docker container that has ROS Melodic, Gazebo 9, Python 2.7, and the Race On code ready to start a simulation. Using Docker containers instead of VM allows us to exactly replicate the same environment both locally and on GitHub where the evaluations will happen. 
