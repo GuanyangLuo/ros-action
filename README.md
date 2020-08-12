@@ -1,4 +1,4 @@
-test 1
+Need to enable "Actions" for the fork first.
 
 [![Runs on GitHub Action](https://github.com/race-on/ros-action/workflows/Runs%20on%20GitHub%20Action/badge.svg)](https://github.com/race-on/ros-action/actions)
 
