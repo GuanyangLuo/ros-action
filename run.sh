@@ -1,8 +1,11 @@
-source /opt/ros/melodic/setup.bash
-source /race-on-ws/devel/setup.bash
+apt-get update
+apt-get install -y ros-melodic-robot-state-publisher
 
 sudo rosdep init
 rosdep update
+
+source /opt/ros/melodic/setup.bash
+source /race-on-ws/devel/setup.bash
 
 catkin_make
 
