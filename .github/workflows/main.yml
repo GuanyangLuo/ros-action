@@ -23,4 +23,5 @@ jobs:
       - uses: actions/upload-artifact@v2
         with:
           name: recorded-messages
-          path: /home/runner/work/_temp/_github_home/.ros/main.bag
+#           path: /home/runner/work/_temp/_github_home/.ros/main.bag
+          path: /home/runner/work/_temp/_github_home/.ros/latest
